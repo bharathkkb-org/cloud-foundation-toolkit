@@ -1,3 +1,4 @@
+project_name: tflint-ruleset-blueprint
 env:
   - CGO_ENABLED=0
 builds:
