@@ -26,6 +26,7 @@ jobs:
       uses: goreleaser/goreleaser-action@v5
       with:
         version: latest
-        args: release --rm-dist
+        args: release --clean
+        workdir: tflint-ruleset-blueprint
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
