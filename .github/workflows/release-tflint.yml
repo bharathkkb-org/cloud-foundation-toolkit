@@ -30,3 +30,4 @@ jobs:
         workdir: tflint-ruleset-blueprint
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GORELEASER_CURRENT_TAG: ${GITHUB_REF#refs/tags/tflint-ruleset-blueprint/}
