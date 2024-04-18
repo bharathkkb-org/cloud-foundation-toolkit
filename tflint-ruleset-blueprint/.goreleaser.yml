@@ -27,3 +27,6 @@ checksum:
     - glob: ./dist/raw/*
 changelog:
   disable: true
+release:
+  mode: 'keep-existing'
+  name_template: "tflint-ruleset-blueprint/v{{.Version}}"
