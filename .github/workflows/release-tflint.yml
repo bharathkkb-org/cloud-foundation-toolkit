@@ -32,3 +32,8 @@ jobs:
         workdir: tflint-ruleset-blueprint
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: upload
+      run: |
+          gh release upload "tflint-ruleset-blueprint/v${{env.GORELEASER_CURRENT_TAG}}" dist/tflint-ruleset-blueprint_*.zip --repo ${{ github.repository }} --clobber
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
