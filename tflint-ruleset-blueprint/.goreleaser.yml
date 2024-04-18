@@ -30,4 +30,3 @@ changelog:
 release:
   mode: 'keep-existing'
   name_template: "tflint-ruleset-blueprint/v{{.Version}}"
-  tag: "tflint-ruleset-blueprint/v{{.Version}}"
