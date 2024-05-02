@@ -6,13 +6,13 @@ on:
       - 'master'
     paths:
       - 'tflint-ruleset-blueprint/**'
-      - '.github/workflows/go-tflint-plugin.yaml.yml'
+      - '.github/workflows/go-tflint-plugin.yml'
   pull_request:
     branches:
       - 'master'
     paths:
       - 'tflint-ruleset-blueprint/**'
-      - '.github/workflows/go-tflint-plugin.yaml.yml'
+      - '.github/workflows/go-tflint-plugin.yml'
 
 concurrency:
   group: '${{github.workflow}}-${{ github.head_ref || github.ref }}'
